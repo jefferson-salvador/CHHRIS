@@ -1,0 +1,130 @@
+/* Color Palette
+#0A2733 - dark blue;
+#05BBB4 - cyan;
+#D8EBE4 - white;
+#9DBEB9 - light green;
+*/
+
+/* WIP */
+#wip {
+	height: 100vh;
+	width: 100%;
+	background-color: #0a2733;
+	color: #d8ebe4;
+}
+
+#wip-image {
+	width: 20%;
+}
+
+/* INDEX */
+
+html,
+body {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+}
+
+.wrapper {
+	margin: 0px;
+	padding: 0px;
+}
+
+.left,
+.right {
+	height: 100vh;
+	width: 100%;
+}
+
+.left {
+	background: #05bbb4;
+}
+
+.right {
+	background: #0a2733;
+}
+
+#logo {
+	width: 500px;
+}
+
+form {
+	width: 50%;
+}
+
+.form-group > label,
+.form-check > label {
+	color: #d8ebe4;
+}
+
+.form-group > div {
+	border-bottom: 1px solid #05bbb4;
+}
+
+.form-group > div > .fa {
+	color: grey;
+	font-size: 25px;
+}
+
+.form-group > div > input {
+	border: none;
+	background: none;
+}
+
+.form-control:focus,
+.form-control:active {
+	background: transparent;
+	border-color: inherit;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.forget > a {
+	color: #05bbb4;
+}
+
+#login {
+	background: #05bbb4;
+	color: #d8ebe4;
+	width: 125px;
+}
+
+/* ADD EMPLOYEE */
+
+nav {
+	background-color: #0a2733;
+}
+
+#add-employee-form,
+.add-emp-form-group,
+.add-emp-form-check {
+	width: 100%;
+}
+
+.add-emp-form-group input, .add-emp-form-group select {
+	min-width: 300px;
+	max-width: 500px;
+}
+
+.add-emp-button{
+    width: 100px;
+}
+
+button[type=reset]{
+    background-color: #0a2733;
+}
+
+.add-emp-buttons > button[type=submit]{
+    background-color: #05bbb4;
+}
+
+.active{
+    background-color: #05bbb4;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.nav-item{
+    margin-left: 30px;
+}
