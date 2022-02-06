@@ -6,7 +6,7 @@
     $username = $_POST["username"];
     $role = $_POST["role"];
 
-    $stmt = $conn->prepare("UPDATE users SET ACC_NAME=?, USERNAME=?, ROLE=? WHERE USER_ID = $account_id");
+    $stmt = $conn->prepare("UPDATE chhris_users SET ACC_NAME=?, USERNAME=?, ROLE=? WHERE USER_ID = $account_id");
     $stmt->bind_param("sss", $account_name, $username, $role);
     $stmt->execute();
     $stmt->close();

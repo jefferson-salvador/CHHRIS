@@ -2,13 +2,13 @@
     require_once('conn.php');
     $table =""; 
     if($_GET["cat"]=="A"){
-        $table = "division"; 
+        $table = "chhris_division"; 
     }
     else if($_GET["cat"]=="B"){
-        $table = "department";
+        $table = "chhris_department";
     }
     else if($_GET["cat"]=="C"){
-        $table = "users";
+        $table = "chhris_users";
     }
 
     $sql = "SELECT * FROM $table";

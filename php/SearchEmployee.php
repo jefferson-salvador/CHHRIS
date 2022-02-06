@@ -4,7 +4,7 @@
     $limit = intval($_GET["limit"]);
     $str = $_GET["toSearch"];
 
-    $sql = "SELECT * FROM employees WHERE CONCAT(FNAME,' ', MNAME,' ', LNAME) LIKE '%$str%' LIMIT $limit";
+    $sql = "SELECT * FROM chhris_employees WHERE CONCAT(FNAME,' ', MNAME,' ', LNAME) LIKE '%$str%' LIMIT $limit";
     $result = $conn->query($sql);
 
     if($result->num_rows > 0)

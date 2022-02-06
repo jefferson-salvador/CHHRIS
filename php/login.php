@@ -5,7 +5,7 @@
     $password = $_POST["password"]; 
     echo $username;
 
-    $emailcheck = $conn->query("SELECT * FROM users where USERNAME='$username'");
+    $emailcheck = $conn->query("SELECT * FROM chhris_users where USERNAME='$username'");
 
     if(mysqli_num_rows($emailcheck)>0){
         $row = $emailcheck->fetch_assoc();

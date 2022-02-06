@@ -6,9 +6,9 @@
     $mode = $_GET["mode"];
 
     $BranchId = $_GET["branchId"]; 
-    $result = mysqli_query($conn, "SELECT * FROM division WHERE DIV_ID = $BranchId"); 
+    $result = mysqli_query($conn, "SELECT * FROM chhris_division WHERE DIV_ID = $BranchId"); 
     $row = mysqli_fetch_row($result); 
-    $anoResult = mysqli_query($conn, "Select FNAME, MNAME, LNAME FROM employees where EMP_ID=$row[3]"); 
+    $anoResult = mysqli_query($conn, "Select FNAME, MNAME, LNAME FROM chhris_employees where EMP_ID=$row[3]"); 
     $row1 = mysqli_fetch_row($anoResult); 
 
 

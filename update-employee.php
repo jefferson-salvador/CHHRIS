@@ -5,11 +5,11 @@
     if(isset($_GET["id"]))
     {
         $id = $_GET["id"];
-        $sql = "SELECT * FROM employees WHERE EMP_ID = $id";
+        $sql = "SELECT * FROM chhris_employees WHERE EMP_ID = $id";
         $result = $conn->query($sql);
         $data = $result->fetch_assoc();
 
-        $sql = "SELECT * FROM users WHERE EMP_ID = $id";
+        $sql = "SELECT * FROM chhris_users WHERE EMP_ID = $id";
         $result = $conn->query($sql);
         
         if($result->num_rows > 0)
@@ -20,7 +20,7 @@
         }
     }
 
-    $sql = "SELECT * FROM managers WHERE MANAGER_ID = $data[MANAGER_ID]";
+    $sql = "SELECT * FROM chhris_managers WHERE MANAGER_ID = $data[MANAGER_ID]";
     $result = $conn->query($sql);
     $assoc = $result->fetch_assoc();
     $manager_name = $assoc["Manager_Name"];

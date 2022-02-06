@@ -1,7 +1,7 @@
 <?php
     require_once('conn.php');
 
-    $sql = "SELECT * FROM division";
+    $sql = "SELECT * FROM chhris_division";
     $result = $conn->query($sql);
 
     if($result->num_rows> 0)

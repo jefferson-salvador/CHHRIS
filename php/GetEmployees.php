@@ -7,7 +7,7 @@
     
     if($limit >= 1)
     {
-        $sql = "SELECT * FROM employees LIMIT $start, $limit";
+        $sql = "SELECT * FROM chhris_employees LIMIT $start, $limit";
         $result = $conn->query($sql);
 
         if($result->num_rows > 0)

@@ -18,7 +18,7 @@
      }
 
      $rowstart = ($page-1) *$limit;
-     $data = $conn->query("SELECT * FROM department $search LIMIT $rowstart, $limit"); 
+     $data = $conn->query("SELECT * FROM chhris_department $search LIMIT $rowstart, $limit"); 
      if(mysqli_num_rows($data)>0){
          while($row = mysqli_fetch_assoc($data)){
              echo '

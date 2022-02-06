@@ -18,11 +18,11 @@
      }
 
      $rowstart = ($page-1) *$limit;
-     $data = $conn->query("SELECT * FROM division $search LIMIT $rowstart, $limit"); 
+     $data = $conn->query("SELECT * FROM chhris_division $search LIMIT $rowstart, $limit"); 
      if(mysqli_num_rows($data)>0){
          while($row = mysqli_fetch_assoc($data)){
             $managerid = $row['DIV_MANAGER'];
-            $managername = mysqli_fetch_assoc($conn->query("SELECT Manager_Name FROM managers where MANAGER_ID='$managerid' "));
+            $managername = mysqli_fetch_assoc($conn->query("SELECT Manager_Name FROM chhris_managers where MANAGER_ID='$managerid' "));
             
              echo '
              <tr>

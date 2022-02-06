@@ -6,15 +6,15 @@
     }
     $table="";
     if($_GET["cat"]=="A"){
-        $table = "division"; 
+        $table = "chhris_division"; 
         $function = "showBranch(";
     }
     else if($_GET["cat"]=="B"){
-        $table = "department"; 
+        $table = "chhris_department"; 
         $function = "showDepartment(";
     }
     else if($_GET["cat"]=="C"){
-        $table = "users";
+        $table = "chhris_users";
         $function = "showUsers(";
     }
     

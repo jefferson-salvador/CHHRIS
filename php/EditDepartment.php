@@ -6,7 +6,7 @@
     $dept_desc = $_POST["desc"];
     $dept_head = $_POST["depthead"];
 
-    $stmt = $conn->prepare("UPDATE department SET DEPT_NAME=?, DESCRIPTION=?, DEPT_HEAD=? WHERE DEPT_ID = $dept_id");
+    $stmt = $conn->prepare("UPDATE chhris_department SET DEPT_NAME=?, DESCRIPTION=?, DEPT_HEAD=? WHERE DEPT_ID = $dept_id");
     $stmt->bind_param("sss", $dept_name, $dept_desc, $dept_head);
     $stmt->execute();
     $stmt->close();

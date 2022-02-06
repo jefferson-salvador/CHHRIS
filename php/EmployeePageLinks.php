@@ -4,7 +4,7 @@
     $limit = intval($_GET["limit"]);
     $curr_page = intval($_GET["page"]);
 
-    $sql = "SELECT * FROM employees";
+    $sql = "SELECT * FROM chhris_employees";
     $result = $conn->query($sql);
     $num_entries = $result->num_rows;
 

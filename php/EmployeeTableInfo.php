@@ -1,7 +1,7 @@
 <?php
     require_once('conn.php');
 
-    $sql = "SELECT * FROM employees";
+    $sql = "SELECT * FROM chhris_employees";
     $result = $conn->query($sql);
     $total_entries = $result->num_rows;
 

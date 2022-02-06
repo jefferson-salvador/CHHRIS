@@ -4,7 +4,7 @@
     $limit = intval($_GET["limit"]);
     $str = $_GET["toSearch"];
 
-    $sql = "SELECT USER_ID, ACC_NAME, USERNAME, ROLE FROM users WHERE ACC_NAME LIKE '%$str%' LIMIT $limit";
+    $sql = "SELECT USER_ID, ACC_NAME, USERNAME, ROLE FROM chhris_users WHERE ACC_NAME LIKE '%$str%' LIMIT $limit";
     $result = $conn->query($sql);
 
     if($result->num_rows > 0)

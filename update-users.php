@@ -5,7 +5,7 @@
     if(isset($_GET["id"]))
     {
         $id = $_GET["id"];
-        $sql = "SELECT * FROM users WHERE USER_ID = $id";
+        $sql = "SELECT * FROM chhris_users WHERE USER_ID = $id";
         $result = $conn->query($sql);
         $data = $result->fetch_assoc();
     }

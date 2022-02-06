@@ -6,11 +6,11 @@
     $criteria="";
     
     if($_GET["cat"]=="A"){
-        $table = "department";
+        $table = "chhris_department";
         $criteria = "DEPT_ID=".(int)$ID;
     }
     else{
-        $table = "users"; 
+        $table = "chhris_users"; 
         $criteria = "USER_ID=".(int)$ID;
     }
 

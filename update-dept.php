@@ -5,7 +5,7 @@
     if(isset($_GET["id"]))
     {
         $id = $_GET["id"];
-        $sql = "SELECT * FROM department WHERE DEPT_ID = $id";
+        $sql = "SELECT * FROM chhris_department WHERE DEPT_ID = $id";
         $result = $conn->query($sql);
         $data = $result->fetch_assoc();
     }

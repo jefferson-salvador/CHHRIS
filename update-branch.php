@@ -5,12 +5,12 @@
     if(isset($_GET["id"]))
     {
         $id = $_GET["id"];
-        $sql = "SELECT * FROM division WHERE DIV_ID = $id";
+        $sql = "SELECT * FROM chhris_division WHERE DIV_ID = $id";
         $result = $conn->query($sql);
         $data = $result->fetch_assoc();
     }
 
-    $sql = "SELECT * FROM managers WHERE MANAGER_ID = $data[DIV_MANAGER]";
+    $sql = "SELECT * FROM chhris_managers WHERE MANAGER_ID = $data[DIV_MANAGER]";
     $result = $conn->query($sql);
     $assoc = $result->fetch_assoc();
     $manager_name = $assoc["Manager_Name"];

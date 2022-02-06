@@ -1,7 +1,7 @@
 <?php
     require_once('conn.php');
 
-    $sql = "SELECT * FROM managers";
+    $sql = "SELECT * FROM chhris_managers";
     $result = $conn->query($sql);
 
     if($result->num_rows> 0)

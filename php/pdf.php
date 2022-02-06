@@ -6,13 +6,13 @@ $empId = $_GET["empId"];
 $mode = $_GET["mode"];
 $mpdf = new \Mpdf\Mpdf();
 
-$result_db = mysqli_query($conn,"SELECT * FROM employees where EMP_ID = $empId");
+$result_db = mysqli_query($conn,"SELECT * FROM chhris_employees where EMP_ID = $empId");
 $row_db = mysqli_fetch_row($result_db); 
-$result_db1 = mysqli_query($conn,"SELECT DEPT_NAME FROM department where DEPT_ID = $row_db[11]");
+$result_db1 = mysqli_query($conn,"SELECT DEPT_NAME FROM chhris_department where DEPT_ID = $row_db[11]");
 $row_db1 = mysqli_fetch_row($result_db1); 
-$result_db2 = mysqli_query($conn,"SELECT DIV_NAME FROM division where DIV_ID = $row_db[12]");
+$result_db2 = mysqli_query($conn,"SELECT DIV_NAME FROM chhris_division where DIV_ID = $row_db[12]");
 $row_db2 = mysqli_fetch_row($result_db2); 
-$result_db3 = mysqli_query($conn,"SELECT FNAME, MNAME, LNAME FROM employees where EMP_ID = $row_db[15]");
+$result_db3 = mysqli_query($conn,"SELECT FNAME, MNAME, LNAME FROM chhris_employees where EMP_ID = $row_db[15]");
 $row1 = mysqli_fetch_row($result_db3); 
 
 
